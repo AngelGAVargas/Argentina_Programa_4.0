@@ -1,0 +1,19 @@
+var constraints = {
+  nombre: {
+    presence: "Por favor, ingresa tu nombre",
+  },
+  apellido: {
+    presence: "Por favor, ingresa tu apellido",
+  },
+  email: {
+    presence: "Por favor, ingresa tu correo electrónico",
+    email: "Por favor, ingresa un correo electrónico válido",
+  },
+  mensaje: {
+    presence: "Por favor, ingresa un mensaje",
+    length: {
+      minimum: 10,
+      message: "Debe contener al menos 10 caracteres"
+    }
+  }
+};
