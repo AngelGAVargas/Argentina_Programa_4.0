@@ -25,493 +25,1494 @@ p{
 li{
     font-size: 12pt;
 }
-body{
+a{
+    text-decoration: none;
+    color: white;
+}
+/*body{
     width: 360px;
-}
+}*/
 /*nav-bar y primera seccion*/
-.background-1{
-    padding: 20px 15px;
-    background: linear-gradient(#0085FF, #30FFF3);
-    width: 100%;
-}
-.contendor-header{
-    height: 86px;
-}
-.nav-bar{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.opciones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
+@media (max-width: 360px) {
+    .background-1{
+        padding: 20px 15px;
+        background: linear-gradient(#0085FF, #30FFF3);
+        width: 100%;
+    }
+    .contendor-header{
+        height: 86px;
+    }
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opciones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .logotipo h3{
+        color: white;
+    }
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 0px 5px;
+    }
+    .search-bar {
+        background-color: white;
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        margin-top: 19px;
+    }
+    .search-bar input {
+        width: 90%;
+        padding: 0 0 0 8px;
+        border: 0;
+        margin: 0;
+        height: 100%;
+        background-color: transparent;
+        color: #9d9d9d;
+    }
+    .search-bar button {
+        width: 8%;
+        height: 100%;
+        border: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+    .contenedor-text{
+        display: flex;
+        align-items: end;
+        margin-top: 10px;
+        width: 100%;
+        height: 86px;
+    }
+    .contenedor-text h4{
+        color: white;
+    }
+    .contenedor-banner{
+        width: 100%;
+        height: 568px;
+        border-radius: 10px;
+        background-image: url(/src/img/Banner.jpg);
+        background-size: cover;
+        padding-top: 40px;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+    }
+    .contenedor-boton{
+        display: flex;
+        margin-top: 200px;
+        justify-content: center;
+    }
+    .contenedor-boton button{
+        width: 160px;
+        height: 48px;
+        border-radius: 20px;
+        border: 0;
+        background-color: #FFC700;
+        font-weight: 700;
+        font-size: 16pt;
+    }
+    /* seccion de la empresa*/
+    .background-2{
+        padding: 20px 15px;
+        background-color: #d7fffd; 
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        align-items: end;
+        margin: 10px 0 10px 0;
+    }
+    .titulo h1{
+        color: #0085ff;
+    }
+    #sec-presentacion{
+        margin-top: 106px;
+        width: 100%;
+        height: 394;
+    }
+    .presentacion{
+        display: flex;
+    }
+    .presentacion text{
+        width: 283px;
+        margin: 10px 0;
+    }
+    .presentacion i{
+        width: 40px;
+        font-size: 20pt;
+    }
+    .lema{
+        width: 100%;
+        height: 180px;
+        margin-top: 10px 0;
+    }
+    .lema h3{
+        background: linear-gradient(#0085FF, #30FFF3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+    /* seccion personal*/
+    .background-3{
+        padding: 20px 15px;
+        background-color: #0085ff;
+        width: 100%;
+    }
+    #p-personal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .circle-perfil{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .circle-perfil img{
+        width: 100px;
+        height: 100px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .nombre{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .nombre h3{
+        color: white;
+    }
+    .descripcion{
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .descripcion p{
+        width: 100%;
+        margin: 10px 0;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+    .descripcion i{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 30pt;
+        text-align: center;
+    }
+    /* seccion servicios de la empresa*/
+    .background-4{
+        padding: 20px 15px;
+        background-color: white;
+        width: 100%;
+    }
+    .sec-servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .servicios h3{
+        color: #0085FF;
+    }
+    .servicios i{
+        font-size: 30pt;
+    }
+    .servicios ul li{
+        width: 100%;
+        height: 86px;
+        margin: 10px 0;
+    }
+    /* seccion contacto*/
+    .background-5{
+        padding: 20px 15px;
+        background: linear-gradient(#30FFF3,  #0085FF);
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+    .form-contacto form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-contacto form input{
+        height: 32px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form textarea{
+        height: 185px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form button{
+        width: 100%;
+        background-color: #FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    /* seccion cotizacion*/
+    .background-6{
+        padding: 20px 15px;
+        background-color: #0085FF;
+        width: 100%;
+    }
+    .cotizacion{
+        width: 100%;
+    }
+    .cotizacion h3{
+        color: white;
+        text-align: center;
+    }
+    #cotizacion{
+        width: 100%;
+        height: 800px;
+        background-color: white;
+        padding: 10px 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cotizacion p{
+        text-align: center;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 1*/
+    .coti-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-1 button{
+        background-color: #FFC700;
+        font-weight: 700;
+        width: 160px;
+        height: 32px;
+        border: 0;
+        border-radius: 5px;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 2*/
+    .coti-2{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 h3{
+        margin: 10px 0;
+    }
+    .coti-2 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085ff;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-align: center;
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-2 ::placeholder{
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-2 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 3*/
+    .coti-3{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 textarea{
+        width: 100%;
+        height: 230px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+    }
+    .coti-3 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-3 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 4*/
+    .coti-4{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 h3{
+        margin: 20px 0;
+    }
+    .coti-4 p{
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-4 select{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-4 button{
+        width: 160px;
+        height: 32px;
+        background-color: #18c000;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 5*/
+    .coti-5{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .check{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+    .check i{
+        font-size: 50pt;
+        color: #18c000;
+    }
+    .coti-5 button{
+        width: 100%;
+        height: 32px;
+        background-color:#FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*boton cancelar de cotizacion*/
+    .cancelar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin: 0 5px 30px 0;
+    }
+    .cancelar button{
+        background-color: red;
+        width: 130px;
+        height: 32px;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .redes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .redes i{
+        font-size: 30pt;
+        margin: 10px;
+    }
+    .redes p{
+        margin: 10px;
+    }
 }
 
-.logotipo h3{
-    color: white;
-}
-.circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border: 2px solid white;
-    border-radius: 25px;
-    margin: 0px 5px;
-}
-.search-bar {
-    background-color: white;
-    width: 100%;
-    height: 32px;
-    border-radius: 5px;
-    margin-top: 19px;
-}
-.search-bar input {
-    width: 90%;
-    padding: 0 0 0 8px;
-    border: 0;
-    margin: 0;
-    height: 100%;
-    background-color: transparent;
-    color: #9d9d9d;
-}
-.search-bar button {
-    width: 8%;
-    height: 100%;
-    border: 0;
-    margin: 0;
-    background-color: transparent;
-}
-.contenedor-text{
-    display: flex;
-    align-items: end;
-    margin-top: 10px;
-    width: 100%;
-    height: 86px;
-}
-.contenedor-text h4{
-    color: white;
-}
-.contenedor-banner{
-    width: 100%;
-    height: 568px;
-    border-radius: 10px;
-    background-image: url(/src/img/Banner.jpg);
-    background-size: cover;
-    padding-top: 40px;
-    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
-}
-.contenedor-boton{
-    display: flex;
-    margin-top: 200px;
-    justify-content: center;
-}
-.contenedor-boton button{
-    width: 160px;
-    height: 48px;
-    border-radius: 20px;
-    border: 0;
-    background-color: #FFC700;
-    font-weight: 700;
-    font-size: 16pt;
-}
-/* seccion de la empresa*/
-.background-2{
-    padding: 20px 15px;
-    background-color: #d7fffd; 
-    width: 100%;
-}
-.titulo{
-    width: 100%;
-    height: 86px;
-    display: flex;
-    align-items: end;
-    margin: 10px 0 10px 0;
-}
-.titulo h1{
-    color: #0085ff;
-}
-#sec-presentacion{
-    margin-top: 106px;
-    width: 100%;
-    height: 394;
-}
-.presentacion{
-    display: flex;
-}
-.presentacion text{
-    width: 283px;
-    margin: 10px 0;
-}
-.presentacion i{
-    width: 40px;
-    font-size: 20pt;
-}
-.lema{
-    width: 100%;
-    height: 180px;
-    margin-top: 10px 0;
-}
-.lema h3{
-    background: linear-gradient(#0085FF, #30FFF3);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-}
-/* seccion personal*/
-.background-3{
-    padding: 20px 15px;
-    background-color: #0085ff;
-    width: 100%;
-}
-#p-personal{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.circle-perfil{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-}
-.circle-perfil img{
-    width: 100px;
-    height: 100px;
-    border: 3px solid white;
-    border-radius: 50px;
-}
-.nombre{
-    width: 100%;
-    height: 86px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-.nombre h3{
-    color: white;
-}
-.descripcion{
-    width: 100%;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
-.descripcion p{
-    width: 100%;
-    margin: 10px 0;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-}
-.descripcion i{
-    width: 100%;
-    margin: 10px 0;
-    font-size: 30pt;
-    text-align: center;
-}
-/* seccion servicios de la empresa*/
-.background-4{
-    padding: 20px 15px;
-    background-color: white;
-    width: 100%;
-}
-.sec-servicios{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.servicios{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    text-align: center;
-}
-.servicios h3{
-    color: #0085FF;
-}
-.servicios i{
-    font-size: 30pt;
-}
-.servicios ul li{
-    width: 100%;
-    height: 86px;
-    margin: 10px 0;
-}
-/* seccion contacto*/
-.background-5{
-    padding: 20px 15px;
-    background: linear-gradient(#30FFF3,  #0085FF);
-    width: 100%;
-}
-.contacto{
-    width: 100%;
-    text-align: center;
-}
-.form-contacto form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-.form-contacto form input{
-    height: 32px;
-    margin: 5px 0;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
-}
-.form-contacto form textarea{
-    height: 185px;
-    margin: 5px 0;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
-}
-.form-contacto form button{
-    width: 100%;
-    background-color: #FFC700;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-/* seccion cotizacion*/
-.background-6{
-    padding: 20px 15px;
-    background-color: #0085FF;
-    width: 100%;
-}
-.cotizacion{
-    width: 100%;
-}
-.cotizacion h3{
-    color: white;
-    text-align: center;
-}
-#cotizacion{
-    width: 100%;
-    height: 800px;
-    background-color: white;
-    padding: 10px 10px 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#cotizacion p{
-    text-align: center;
-    margin: 30px 0;
-}
-/*cotizacion parte 1*/
-.coti-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-1 button{
-    background-color: #FFC700;
-    font-weight: 700;
-    width: 160px;
-    height: 32px;
-    border: 0;
-    border-radius: 5px;
-    margin: 30px 0;
-}
-/*cotizacion parte 2*/
-.coti-2{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-2 form{
-    padding: 30px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-2 h3{
-    margin: 10px 0;
-}
-.coti-2 input{
-    width: 100%;
-    height: 32px;
-    border: 1px solid #0085ff;
-    border-radius: 5px;
-    margin: 10px 0;
-    text-align: center;
-    color: #0085FF;
-    font-weight: 700;
-}
-.coti-2 ::placeholder{
-    font-weight: 700;
-    color: #0085FF;
-}
-.coti-2 button{
-    width: 160px;
-    height: 32px;
-    background-color: #0085FF;
-    color: white;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-}
-/*cotizacion parte 3*/
-.coti-3{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-3 form{
-    padding: 30px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-3 textarea{
-    width: 100%;
-    height: 230px;
-    border: 1px solid #0085FF;
-    border-radius: 5px;
-    color: #0085FF;
-    text-align: center;
-    font-weight: 700;
-}
-.coti-3 ::placeholder{
-    color: #0085FF;
-    font-weight: 700;
-}
-.coti-3 button{
-    width: 160px;
-    height: 32px;
-    background-color: #0085FF;
-    color: white;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-}
-/*cotizacion parte 4*/
-.coti-4{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-4 form{
-    padding: 30px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.coti-4 h3{
-    margin: 20px 0;
-}
-.coti-4 p{
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    color: #0085FF;
-}
-.coti-4 select{
-    width: 100%;
-    height: 32px;
-    border: 1px solid #0085FF;
-    border-radius: 5px;
-    color: #0085FF;
-    text-align: center;
-    font-weight: 700;
-    margin: 10px 0;
-}
-.coti-4 input{
-    width: 100%;
-    height: 32px;
-    border: 1px solid #0085FF;
-    border-radius: 5px;
-    color: #0085FF;
-    text-align: center;
-    font-weight: 700;
-    margin: 10px 0;
-}
-.coti-4 ::placeholder{
-    color: #0085FF;
-    font-weight: 700;
-}
-.coti-4 button{
-    width: 160px;
-    height: 32px;
-    background-color: #18c000;
-    color: white;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-}
-/*cotizacion parte 5*/
-.coti-5{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-.check{
-    width: 100%;
-    height: 70px;
-    text-align: center;
-}
-.check i{
-    font-size: 50pt;
-    color: #18c000;
-}
-.coti-5 button{
-    width: 100%;
-    height: 32px;
-    background-color:#FFC700;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-}
-/*boton cancelar de cotizacion*/
-.cancelar{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin: 0 5px 30px 0;
-}
-.cancelar button{
-    background-color: red;
-    width: 130px;
-    height: 32px;
-    color: white;
-    font-weight: 700;
-    border: 0;
-    border-radius: 5px;
-}
-/* footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.redes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.redes i{
-    font-size: 30pt;
-    margin: 10px;
-}
-.redes p{
-    margin: 10px;
+@media (max-width: 720px) {
+    .background-1{
+        padding: 20px 15px;
+        background: linear-gradient(#0085FF, #30FFF3);
+        width: 100%;
+    }
+    .contendor-header{
+        height: 86px;
+    }
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opciones{
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+    .opciones720{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+    .opt{
+        margin: 10px 15px;
+    }
+    
+    .logotipo h3{
+        color: white;
+    }
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 0px 5px;
+    }
+    .search-bar {
+        background-color: white;
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        margin-top: 19px;
+    }
+    .search-bar input {
+        width: 90%;
+        padding: 0 0 0 8px;
+        border: 0;
+        margin: 0;
+        height: 100%;
+        background-color: transparent;
+        color: #9d9d9d;
+    }
+    .search-bar button {
+        width: 8%;
+        height: 100%;
+        border: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+    .contenedor-text{
+        display: flex;
+        align-items: end;
+        margin-top: 10px;
+        width: 100%;
+        height: 86px;
+    }
+    .contenedor-text h4{
+        color: white;
+    }
+    .contenedor-banner{
+        width: 100%;
+        height: 568px;
+        border-radius: 10px;
+        background-image: url(/src/img/Banner.jpg);
+        background-size: cover;
+        padding-top: 40px;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+    }
+    .contenedor-boton{
+        display: flex;
+        margin-top: 200px;
+        justify-content: center;
+    }
+    .contenedor-boton button{
+        width: 160px;
+        height: 48px;
+        border-radius: 20px;
+        border: 0;
+        background-color: #FFC700;
+        font-weight: 700;
+        font-size: 16pt;
+    }
+    /* seccion de la empresa*/
+    .background-2{
+        padding: 20px 15px;
+        background-color: #d7fffd; 
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        align-items: end;
+        margin: 10px 0 10px 0;
+    }
+    .titulo h1{
+        color: #0085ff;
+    }
+    #sec-presentacion{
+        margin-top: 106px;
+        width: 100%;
+        height: 394;
+    }
+    .presentacion{
+        display: flex;
+    }
+    .presentacion text{
+        width: 283px;
+        margin: 10px 0;
+    }
+    .presentacion i{
+        width: 40px;
+        font-size: 20pt;
+    }
+    .lema{
+        width: 100%;
+        height: 180px;
+        margin-top: 10px 0;
+    }
+    .lema h3{
+        background: linear-gradient(#0085FF, #30FFF3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+    /* seccion personal*/
+    .background-3{
+        padding: 20px 15px;
+        background-color: #0085ff;
+        width: 100%;
+    }
+    #p-personal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .circle-perfil{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .circle-perfil img{
+        width: 100px;
+        height: 100px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .nombre{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .nombre h3{
+        color: white;
+    }
+    .descripcion{
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .descripcion p{
+        width: 100%;
+        margin: 10px 0;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+    .descripcion i{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 30pt;
+        text-align: center;
+    }
+    /* seccion servicios de la empresa*/
+    .background-4{
+        padding: 20px 15px;
+        background-color: white;
+        width: 100%;
+    }
+    .sec-servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .servicios h3{
+        color: #0085FF;
+    }
+    .servicios i{
+        font-size: 30pt;
+    }
+    .servicios ul li{
+        width: 100%;
+        height: 86px;
+        margin: 10px 0;
+    }
+    /* seccion contacto*/
+    .background-5{
+        padding: 20px 15px;
+        background: linear-gradient(#30FFF3,  #0085FF);
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+    .form-contacto form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-contacto form input{
+        height: 32px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form textarea{
+        height: 185px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form button{
+        width: 100%;
+        background-color: #FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    /* seccion cotizacion*/
+    .background-6{
+        padding: 20px 15px;
+        background-color: #0085FF;
+        width: 100%;
+    }
+    .cotizacion{
+        width: 100%;
+    }
+    .cotizacion h3{
+        color: white;
+        text-align: center;
+    }
+    #cotizacion{
+        width: 100%;
+        height: 650px;
+        background-color: white;
+        padding: 10px 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cotizacion p{
+        text-align: center;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 1*/
+    .coti-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-1 button{
+        background-color: #FFC700;
+        font-weight: 700;
+        width: 160px;
+        height: 32px;
+        border: 0;
+        border-radius: 5px;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 2*/
+    .coti-2{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 h3{
+        margin: 10px 0;
+    }
+    .coti-2 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085ff;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-align: center;
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-2 ::placeholder{
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-2 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 3*/
+    .coti-3{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 textarea{
+        width: 100%;
+        height: 230px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+    }
+    .coti-3 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-3 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 4*/
+    .coti-4{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 h3{
+        margin: 20px 0;
+    }
+    .coti-4 p{
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-4 select{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-4 button{
+        width: 160px;
+        height: 32px;
+        background-color: #18c000;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 5*/
+    .coti-5{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .check{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+    .check i{
+        font-size: 50pt;
+        color: #18c000;
+    }
+    .coti-5 button{
+        width: 100%;
+        height: 32px;
+        background-color:#FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*boton cancelar de cotizacion*/
+    .cancelar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin: 0 5px 30px 0;
+    }
+    .cancelar button{
+        background-color: red;
+        width: 130px;
+        height: 32px;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .redes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .redes i{
+        font-size: 30pt;
+        margin: 10px;
+    }
+    .redes p{
+        margin: 10px;
+    }
+}
+@media (min-width: 720px) {
+    .background-1{
+        padding: 20px 15px;
+        background: linear-gradient(#0085FF, #30FFF3);
+        width: 100%;
+    }
+    .contendor-header{
+        height: 86px;
+    }
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opciones{
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+    .opciones720{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+    .opt{
+        margin: 10px 50px;
+    }
+    
+    .logotipo h3{
+        color: white;
+    }
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 0px 5px;
+    }
+    .search-bar {
+        background-color: white;
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        margin-top: 19px;
+    }
+    .search-bar input {
+        width: 90%;
+        padding: 0 0 0 8px;
+        border: 0;
+        margin: 0;
+        height: 100%;
+        background-color: transparent;
+        color: #9d9d9d;
+    }
+    .search-bar button {
+        width: 8%;
+        height: 100%;
+        border: 0;
+        margin: 0;
+        background-color: transparent;
+    }
+    .contenedor-text{
+        display: flex;
+        align-items: end;
+        margin-top: 10px;
+        width: 100%;
+        height: 86px;
+    }
+    .contenedor-text h4{
+        color: white;
+    }
+    .contenedor-banner{
+        width: 100%;
+        height: 568px;
+        border-radius: 10px;
+        background-image: url(/src/img/Banner.jpg);
+        background-size: cover;
+        padding-top: 40px;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+    }
+    .contenedor-boton{
+        display: flex;
+        margin-top: 200px;
+        justify-content: center;
+    }
+    .contenedor-boton button{
+        width: 160px;
+        height: 48px;
+        border-radius: 20px;
+        border: 0;
+        background-color: #FFC700;
+        font-weight: 700;
+        font-size: 16pt;
+    }
+    /* seccion de la empresa*/
+    .background-2{
+        padding: 20px 15px;
+        background-color: #d7fffd; 
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        align-items: end;
+        margin: 10px 0 10px 0;
+    }
+    .titulo h1{
+        color: #0085ff;
+    }
+    #sec-presentacion{
+        margin-top: 106px;
+        width: 100%;
+        height: 394;
+    }
+    .presentacion{
+        display: flex;
+    }
+    .presentacion text{
+        width: 283px;
+        margin: 10px 0;
+    }
+    .presentacion i{
+        width: 40px;
+        font-size: 20pt;
+    }
+    .lema{
+        width: 100%;
+        height: 180px;
+        margin-top: 10px 0;
+    }
+    .lema h3{
+        background: linear-gradient(#0085FF, #30FFF3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+    /* seccion personal*/
+    .background-3{
+        padding: 20px 15px;
+        background-color: #0085ff;
+        width: 100%;
+    }
+    #p-personal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .circle-perfil{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .circle-perfil img{
+        width: 100px;
+        height: 100px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .nombre{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .nombre h3{
+        color: white;
+    }
+    .descripcion{
+        width: 100%;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .descripcion p{
+        width: 100%;
+        margin: 10px 0;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+    .descripcion i{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 30pt;
+        text-align: center;
+    }
+    /* seccion servicios de la empresa*/
+    .background-4{
+        padding: 20px 15px;
+        background-color: white;
+        width: 100%;
+    }
+    .sec-servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .servicios h3{
+        color: #0085FF;
+    }
+    .servicios i{
+        font-size: 30pt;
+    }
+    .servicios ul li{
+        width: 100%;
+        height: 86px;
+        margin: 10px 0;
+    }
+    /* seccion contacto*/
+    .background-5{
+        padding: 20px 15px;
+        background: linear-gradient(#30FFF3,  #0085FF);
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+    .form-contacto form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-contacto form input{
+        height: 32px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form textarea{
+        height: 185px;
+        margin: 5px 0;
+        border: 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .form-contacto form button{
+        width: 100%;
+        background-color: #FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    /* seccion cotizacion*/
+    .background-6{
+        padding: 20px 15px;
+        background-color: #0085FF;
+        width: 100%;
+    }
+    .cotizacion{
+        width: 100%;
+    }
+    .cotizacion h3{
+        color: white;
+        text-align: center;
+    }
+    #cotizacion{
+        width: 100%;
+        height: 650px;
+        background-color: white;
+        padding: 10px 10px 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #cotizacion p{
+        text-align: center;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 1*/
+    .coti-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-1 button{
+        background-color: #FFC700;
+        font-weight: 700;
+        width: 160px;
+        height: 32px;
+        border: 0;
+        border-radius: 5px;
+        margin: 30px 0;
+    }
+    /*cotizacion parte 2*/
+    .coti-2{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-2 h3{
+        margin: 10px 0;
+    }
+    .coti-2 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085ff;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-align: center;
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-2 ::placeholder{
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-2 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 3*/
+    .coti-3{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-3 textarea{
+        width: 100%;
+        height: 230px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+    }
+    .coti-3 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-3 button{
+        width: 160px;
+        height: 32px;
+        background-color: #0085FF;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 4*/
+    .coti-4{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 form{
+        padding: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coti-4 h3{
+        margin: 20px 0;
+    }
+    .coti-4 p{
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        color: #0085FF;
+    }
+    .coti-4 select{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #0085FF;
+        border-radius: 5px;
+        color: #0085FF;
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .coti-4 ::placeholder{
+        color: #0085FF;
+        font-weight: 700;
+    }
+    .coti-4 button{
+        width: 160px;
+        height: 32px;
+        background-color: #18c000;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*cotizacion parte 5*/
+    .coti-5{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .check{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+    .check i{
+        font-size: 50pt;
+        color: #18c000;
+    }
+    .coti-5 button{
+        width: 100%;
+        height: 32px;
+        background-color:#FFC700;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /*boton cancelar de cotizacion*/
+    .cancelar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin: 0 5px 30px 0;
+    }
+    .cancelar button{
+        background-color: red;
+        width: 130px;
+        height: 32px;
+        color: white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 5px;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .redes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .redes i{
+        font-size: 30pt;
+        margin: 10px;
+    }
+    .redes p{
+        margin: 10px;
+    }
 }

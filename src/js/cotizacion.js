@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('#iniciar-cotizacion').click(function(e){
         e.preventDefault();
         $(".coti-1").fadeOut("slow", function() {
@@ -58,23 +57,34 @@ $(document).ready(function() {
       }
       
       function descargarPDF() {
+        const { jsPDF } = window.jspdf;    
         // Crear un objeto jsPDF
-        var doc = new jsPDF();
+        const doc = new jsPDF();
    
         // Obtener los datos del formulario
-        var nombre = $("#nombre").val();
-        var apellido = $("#apellido").val();
-        var email = $("#email").val();
-        var numero = $("#numero").val();
+        let nombre = $(".name").val();
+        let apellido = $(".apellido").val();
+        let email = $(".email").val();
+        let telefono = $("#telefono").val();
+        let idea = $("#idea").val();
+        let servicio = $("#servicio").val();
+        let fecha = $("#fecha").val();
+        let presupuestoMax = $("#presupuesto-max").val();
    
         // Agregar los datos al PDF
-        doc.text("Nombre: " + nombre, 10, 10);
-        doc.text("Apellido: " + apellido, 10, 20);
-        doc.text("Email: " + email, 10, 30);
-        doc.text("Número: " + numero, 10, 40);
+        doc.text("RUBYTEC", 10, 10);
+        doc.text("Resumen de cotizacion:", 10, 20);
+        doc.text("Nombre: " + nombre, 10, 30);
+        doc.text("Apellido: " + apellido, 10, 40);
+        doc.text("Email: " + email, 10, 50);
+        doc.text("Telefono: " + telefono, 10, 60);
+        doc.text("Idea: " + idea, 10, 70);
+        doc.text("Servicio: " + servicio, 10, 80);
+        doc.text("Fecha estimada: " + fecha, 10, 90);
+        doc.text("Monto maximo: $ " + presupuestoMax, 10, 100);
    
         // Descargar el PDF
-        doc.save("datos.pdf");
+        doc.save("resumen_de_cotizacion.pdf");
     };
       
    
