@@ -9,7 +9,7 @@ const constraints = {
     email: {
       presence: true,
       email: true,
-      message: "Debe ser una dirección de correo válida"
+      message: "Debe ser una dirección de correo válida",
     },
     mensaje: {
       presence: true,

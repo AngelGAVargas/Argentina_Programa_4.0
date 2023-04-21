@@ -87,6 +87,5 @@ $(document).ready(function() {
         doc.save("resumen_de_cotizacion.pdf");
     };
       
-   
-  });
+});
   
