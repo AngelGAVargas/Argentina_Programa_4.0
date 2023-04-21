@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Jquery -->
-    <script src="src/js/jquery-3.6.4.js"></script>
+    <script src="/src/js/jquery-3.6.4.js"></script>
 </head>
 <body>
     <a href="#"></a>
@@ -32,6 +32,12 @@
                         <a href="#sec-presentacion"><i class="fa-solid fa-info" style="color: #ffffff;"></i></a></div></div>
                     <div><div class="circle">
                         <a href="#"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></a></div></div>
+                </div>
+                <div class="search-bar-720">
+                    <from>
+                        <input type="text" placeholder="Buscar">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #9d9d9d;"></i></button>
+                    </from>
                 </div>
                 <div class="opciones720">
                     <div>
@@ -61,7 +67,7 @@
         <div class="contenedor-banner">
             <h2>Soluciones tecnológicas</h2>
             <div class="contenedor-boton">
-                <button type="button">Cotizar</button>
+                <button type="button" id="btnBanner">Cotizar</button>
             </div>
         </div>
 </div>
@@ -142,7 +148,7 @@
 </div>
 <!-- seccion contactos -->
 <div class="background-5">
-    <div id="contacto" class="contacto">
+    <div id="contacto" >
         <h3>CONTACTO</h3>
         <p>Para contactarnos, por favor llena el siguiente formulario con tus datos de contacto y una breve descripción de tu consulta. Uno de nuestros representantes se pondrá en contacto contigo en breve.</p>
     </div>
@@ -170,7 +176,7 @@
     <div id="cotizacion">
         <!-- cotizacion parte 1 -->
         <div class="coti-1">
-            <div class="intro"><P>Para poder proporcionarte una cotización precisa y detallada, necesitamos que nos brindes algunos detalles importantes acerca de tu proyecto. Por favor, completa el siguiente formulario de cotización con la mayor cantidad de información posible. Una vez recibido, nos pondremos en contacto contigo para discutir los detalles de tu proyecto y proporcionarte una cotización personalizada que se adapte a tus necesidades y presupuesto. </P></div>
+            <div class="intro"><P>Para poder proporcionarte una cotización precisa y detallada, necesitamos que nos brindes algunos detalles importantes acerca de tu proyecto.<br>Por favor, completa el siguiente formulario de cotización con la mayor cantidad de información posible. Una vez recibido, nos pondremos en contacto contigo para discutir los detalles de tu proyecto y proporcionarte una cotización personalizada que se adapte a tus necesidades y presupuesto. </P></div>
             <button id="iniciar-cotizacion">INICIAR</button>
         </div>
         <!-- cotizacion parte 2 -->
@@ -251,11 +257,11 @@
     <div class="Copyright"><p>Copyright 2023. RUBYTEC</p></div>
 </footer>
 <!-- scripts-->
-<script src="src/js/cotizacion.js"></script>
+<script src="/src/js/cotizacion.js"></script>
 
 <!-- validate-->
-<script src="src/js/validate.js"></script>
-<script src="src/js/validacion.js"></script>
+<script src="/src/js/validate.js"></script>
+<script src="/src/js/validacion.js"></script>
 <!--Resumen PDF-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>

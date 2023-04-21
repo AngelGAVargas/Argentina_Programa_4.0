@@ -20,7 +20,7 @@ h4{
     font-size: 14pt;
 }
 p{
-    font-size: 12pt;
+    font-size: 10pt;
 }
 li{
     font-size: 12pt;
@@ -33,7 +33,7 @@ a{
     width: 360px;
 }*/
 /*nav-bar y primera seccion*/
-@media (max-width: 360px) {
+@media (max-width: 620px) {
     .background-1{
         padding: 20px 15px;
         background: linear-gradient(#0085FF, #30FFF3);
@@ -49,13 +49,15 @@ a{
         align-items: center;
         justify-content: space-between;
     }
+    .opciones720{
+        display: none;
+    }
     .opciones{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: right;
-    }
-    
+    }  
     .logotipo h3{
         color: white;
     }
@@ -68,6 +70,9 @@ a{
         border: 2px solid white;
         border-radius: 25px;
         margin: 0px 5px;
+    }
+    .search-bar-720{
+        display: none;
     }
     .search-bar {
         background-color: white;
@@ -133,16 +138,14 @@ a{
     }
     .titulo{
         width: 100%;
-        height: 86px;
+        height: 50px;
         display: flex;
         align-items: end;
-        margin: 10px 0 10px 0;
-    }
-    .titulo h1{
+        margin: 10px 0 0 0;
         color: #0085ff;
     }
     #sec-presentacion{
-        margin-top: 106px;
+        margin: 50px 0;
         width: 100%;
         height: 394;
     }
@@ -159,7 +162,7 @@ a{
     }
     .lema{
         width: 100%;
-        height: 180px;
+        height: 120px;
         margin-top: 10px 0;
     }
     .lema h3{
@@ -168,6 +171,7 @@ a{
         background-clip: text;
         color: transparent;
         text-align: center;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     }
     /* seccion personal*/
     .background-3{
@@ -261,7 +265,7 @@ a{
         background: linear-gradient(#30FFF3,  #0085FF);
         width: 100%;
     }
-    .contacto{
+    #contacto{
         width: 100%;
         text-align: center;
     }
@@ -308,7 +312,7 @@ a{
     }
     #cotizacion{
         width: 100%;
-        height: 800px;
+        height: 550px;
         background-color: white;
         padding: 10px 10px 20px;
         border-radius: 5px;
@@ -521,8 +525,7 @@ a{
         margin: 10px;
     }
 }
-
-@media (max-width: 720px) {
+@media (min-width: 621px) and (max-width: 1080px) {
     .background-1{
         padding: 20px 15px;
         background: linear-gradient(#0085FF, #30FFF3);
@@ -552,8 +555,7 @@ a{
     }
     .opt{
         margin: 10px 15px;
-    }
-    
+    }   
     .logotipo h3{
         color: white;
     }
@@ -566,6 +568,9 @@ a{
         border: 2px solid white;
         border-radius: 25px;
         margin: 0px 5px;
+    }
+    .search-bar-720 {
+        display: none;
     }
     .search-bar {
         background-color: white;
@@ -606,6 +611,7 @@ a{
         border-radius: 10px;
         background-image: url(/src/img/Banner.jpg);
         background-size: cover;
+        background-position: 10%;
         padding-top: 40px;
         box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
     }
@@ -631,16 +637,14 @@ a{
     }
     .titulo{
         width: 100%;
-        height: 86px;
+        height: 50px;
         display: flex;
         align-items: end;
-        margin: 10px 0 10px 0;
-    }
-    .titulo h1{
+        margin: 10px 0 0 0;
         color: #0085ff;
     }
     #sec-presentacion{
-        margin-top: 106px;
+        margin: 50px 0;
         width: 100%;
         height: 394;
     }
@@ -657,7 +661,7 @@ a{
     }
     .lema{
         width: 100%;
-        height: 180px;
+        height: 60px;
         margin-top: 10px 0;
     }
     .lema h3{
@@ -666,6 +670,7 @@ a{
         background-clip: text;
         color: transparent;
         text-align: center;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     }
     /* seccion personal*/
     .background-3{
@@ -703,7 +708,7 @@ a{
     }
     .descripcion{
         width: 100%;
-        height: 112px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -749,8 +754,9 @@ a{
         font-size: 30pt;
     }
     .servicios ul li{
+        text-align: left;
         width: 100%;
-        height: 86px;
+        height: 60px;
         margin: 10px 0;
     }
     /* seccion contacto*/
@@ -806,7 +812,7 @@ a{
     }
     #cotizacion{
         width: 100%;
-        height: 650px;
+        height: 550px;
         background-color: white;
         padding: 10px 10px 20px;
         border-radius: 5px;
@@ -1019,69 +1025,61 @@ a{
         margin: 10px;
     }
 }
-@media (min-width: 720px) {
+@media (min-width: 1080px) {
     .background-1{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background: linear-gradient(#0085FF, #30FFF3);
-        width: 100%;
     }
     .contendor-header{
-        height: 86px;
+        height: 36px;
     }
     .nav-bar{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;
+        height: 36px;
     }
     .opciones{
         display: none;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
     }
     .opciones720{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        flex-wrap: nowrap;
+        align-items: stretch;
         justify-content: right;
     }
     .opt{
-        margin: 10px 50px;
+        margin: 0px 30px;
     }
-    
+    .logotipo{
+        width: 15%;
+    }
     .logotipo h3{
         color: white;
     }
-    .circle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 32px;
-        height: 32px;
-        border: 2px solid white;
-        border-radius: 25px;
-        margin: 0px 5px;
-    }
     .search-bar {
-        background-color: white;
-        width: 100%;
-        height: 32px;
-        border-radius: 5px;
-        margin-top: 19px;
+        display: none;
     }
-    .search-bar input {
-        width: 90%;
-        padding: 0 0 0 8px;
+    .search-bar-720 {
+        width: 30%;
+        background-color: white;
+        height: 36px;
+        border-radius: 5px;
+    }
+    .search-bar-720 input {
         border: 0;
-        margin: 0;
+        width: 88%;
         height: 100%;
+        padding: 0 0 0 8px;
+        margin: 0;
         background-color: transparent;
         color: #9d9d9d;
     }
-    .search-bar button {
-        width: 8%;
+    .search-bar-720 button {
+        width: 10%;
         height: 100%;
         border: 0;
         margin: 0;
@@ -1090,7 +1088,7 @@ a{
     .contenedor-text{
         display: flex;
         align-items: end;
-        margin-top: 10px;
+        margin-top: 50px;
         width: 100%;
         height: 86px;
     }
@@ -1103,16 +1101,23 @@ a{
         border-radius: 10px;
         background-image: url(/src/img/Banner.jpg);
         background-size: cover;
+        background-position: 50%;
         padding-top: 40px;
         box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
     }
+    .contenedor-banner h2{
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 400px;
+        color: #000;
+    }
     .contenedor-boton{
         display: flex;
-        margin-top: 200px;
-        justify-content: center;
+        margin-left: 200px;
+        margin-top: 100px;
     }
     .contenedor-boton button{
-        width: 160px;
+        width: 300px;
         height: 48px;
         border-radius: 20px;
         border: 0;
@@ -1122,7 +1127,7 @@ a{
     }
     /* seccion de la empresa*/
     .background-2{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background-color: #d7fffd; 
         width: 100%;
     }
@@ -1131,31 +1136,33 @@ a{
         height: 86px;
         display: flex;
         align-items: end;
-        margin: 10px 0 10px 0;
-    }
-    .titulo h1{
         color: #0085ff;
     }
     #sec-presentacion{
-        margin-top: 106px;
-        width: 100%;
-        height: 394;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 20px;
+        height: 220px;
     }
     .presentacion{
         display: flex;
+        width: 23%;
+        margin: 0 1%;
     }
     .presentacion text{
-        width: 283px;
-        margin: 10px 0;
+        width: 76%;
     }
     .presentacion i{
-        width: 40px;
-        font-size: 20pt;
+        width: 20%;
+        font-size: 40pt;
     }
     .lema{
         width: 100%;
-        height: 180px;
-        margin-top: 10px 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .lema h3{
         background: linear-gradient(#0085FF, #30FFF3);
@@ -1163,18 +1170,21 @@ a{
         background-clip: text;
         color: transparent;
         text-align: center;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     }
     /* seccion personal*/
     .background-3{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background-color: #0085ff;
-        width: 100%;
     }
     #p-personal{
-        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .p-personal{
+        width: 30%;
+        margin: 0 5%;
     }
     .circle-perfil{
         width: 100%;
@@ -1189,55 +1199,46 @@ a{
     }
     .nombre{
         width: 100%;
-        height: 86px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px 0;
     }
     .nombre h3{
         color: white;
     }
     .descripcion{
         width: 100%;
-        height: 112px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px 0;
     }
     .descripcion p{
         width: 100%;
-        margin: 10px 0;
         font-weight: 300;
         color: white;
         text-align: center;
     }
     .descripcion i{
         width: 100%;
-        margin: 10px 0;
         font-size: 30pt;
         text-align: center;
     }
     /* seccion servicios de la empresa*/
     .background-4{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background-color: white;
-        width: 100%;
     }
     .sec-servicios{
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
     .servicios{
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
         justify-content: center;
-        margin: 10px 0;
         text-align: center;
+        margin: 20px 0;
     }
     .servicios h3{
         color: #0085FF;
@@ -1245,26 +1246,43 @@ a{
     .servicios i{
         font-size: 30pt;
     }
+    .servicios ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .servicios ul li{
-        width: 100%;
+        width: 20%;
         height: 86px;
-        margin: 10px 0;
+        margin: 2% 2.5%;
+        text-align: left;
     }
     /* seccion contacto*/
     .background-5{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background: linear-gradient(#30FFF3,  #0085FF);
         width: 100%;
     }
-    .contacto{
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         text-align: center;
+    }
+    #contacto p{
+        width: 50%;
+    }
+    .form-contacto{
+        display: flex;
+        justify-content: center;
     }
     .form-contacto form{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 50%;
     }
     .form-contacto form input{
         height: 32px;
@@ -1290,9 +1308,13 @@ a{
     }
     /* seccion cotizacion*/
     .background-6{
-        padding: 20px 15px;
+        padding: 20px 50px;
         background-color: #0085FF;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .cotizacion{
         width: 100%;
@@ -1302,10 +1324,10 @@ a{
         text-align: center;
     }
     #cotizacion{
-        width: 100%;
-        height: 650px;
+        width: 50%;
+        height: 550px;
         background-color: white;
-        padding: 10px 10px 20px;
+        padding: 0 50px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -1329,6 +1351,9 @@ a{
         border: 0;
         border-radius: 5px;
         margin: 30px 0;
+    }
+    .intro{
+        width: 400px;
     }
     /*cotizacion parte 2*/
     .coti-2{
@@ -1484,8 +1509,8 @@ a{
         width: 100%;
         display: flex;
         flex-direction: row;
+        align-items: initial;
         justify-content: right;
-        margin: 0 5px 30px 0;
     }
     .cancelar button{
         background-color: red;
