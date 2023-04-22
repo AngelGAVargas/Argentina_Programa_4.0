@@ -1,39 +1,59 @@
-//Creamos los parametros de validacion para el formulario
-const constraints = {
-    nombre: {
-      presence: true,
-    },
-    apellido: {
-      presence: true,
-    },
-    email: {
-      presence: true,
-      email: true,
-      message: "Debe ser una dirección de correo válida",
-    },
-    mensaje: {
-      presence: true,
-    },
-};  
- //obtenemos los valores del formulario
-const form = document.getElementById('form-contacto');
-
-//creamos la validacion a partir del clic en el boton "enviar"
-
-form.addEventListener('submit', (event) =>{
-    event.preventDefault();
-
-    const formData = new FormData(form);
-
-    const errors = validate(Object.fromEntries(formData.entries()), constraints);
+$(document).ready(function(){
   
-    if (errors) {
-      const errorMensaje = Object.values(errors).map(
-        (value) => value.join(" ")
-      );
-      const errorParrafo = document.querySelector("#error-mensaje");
-      errorParrafo.textContent = errorMensaje.join("\n");
-    } else {
-      form.submit();
+  
+  //captumaros el evento click del boton de formulario de contacto
+  $("#btnFormcontac").click(function(){
+      //llamamos al formulario por el ID
+    $("#form-contacto").validate({
+      //creamos un formato de reglas estilo json
+      rules: {
+        nombre: {
+          required: true,
+          minlength: 3,
+          maxlength: 20
+        },
+        apellido: {
+          required: true,
+          minlength: 3,
+          maxlength: 20
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        mensaje: {
+          required: true,
+          minlength: 10,
+          maxlength: 200
+        },
+      },
+      messages: {
+        nombre: {
+          required: "Ingresa un nombre",
+        },
+        apellido: {
+          required: "Ingresa un apellido",
+        },
+        email: {
+          required: "Ingresa un mail",
+          email: "Debe tener @"
+        },
+        mensaje: {
+          required: "Ingresa un mensaje",
+        },
+      }
+    });
+    //llamamos al formulario para devolver un retur si no es valido
+    if($("#form-contacto").valid() == false){
+      return;
     }
+    //gaurdamos los valores que carga el usuario en los input del formulario
+    let nombrec = $("#nombrec").val();
+    let apellidoc = $("#apellidoc").val();
+    let emailc = $("#emailc").val();
+    let mensajec = $("#mensajec").val();
+    
+  });
+
+
 });

@@ -1,11 +1,24 @@
 $(document).ready(function() {
     $('#iniciar-cotizacion').click(function(e){
+        $('.cancelar').show();
         e.preventDefault();
         $(".coti-1").fadeOut("slow", function() {
             $(".coti-2").fadeIn("slow");
         });
     });
 
+    $('#cancelar').click(function(){
+        $(".coti-2").hide( function() {
+            $(".coti-1").show();
+        });
+        $(".coti-3").hide(function() {
+            $(".coti-1").show();
+        });
+        $(".coti-4").hide( function() {
+            $(".coti-1").show();
+        });
+        $('.cancelar').hide();
+    });
     $('#coti-1').click(function(e){
         e.preventDefault();
         $(".coti-2").fadeOut("slow", function() {
@@ -25,8 +38,10 @@ $(document).ready(function() {
         $(".coti-4").fadeOut("slow", function() {
             $(".coti-5").fadeIn("slow");
         });
+        $('.cancelar').hide();
         mostrarResumen();
     });
+
     function mostrarResumen() {
         // capturamos los datos de los formularios
         var datosFormulario1 = $('#coti-form-1 form').serializeArray();

@@ -1286,14 +1286,14 @@ a{
     }
     .form-contacto form input{
         height: 32px;
-        margin: 5px 0;
+        margin: 15px 0;
         border: 0;
         border-radius: 5px;
         text-align: center;
     }
     .form-contacto form textarea{
         height: 185px;
-        margin: 5px 0;
+        margin: 15px 0;
         border: 0;
         border-radius: 5px;
         text-align: center;
@@ -1507,7 +1507,7 @@ a{
     /*boton cancelar de cotizacion*/
     .cancelar{
         width: 100%;
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: initial;
         justify-content: right;

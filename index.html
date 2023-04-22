@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Jquery -->
     <script src="src/js/jquery-3.6.4.js"></script>
+    <!-- Jquery validate-->
+    <script src="src/js/jquery.validate.min.js"></script>
+    <!--Resumen PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <a href="#"></a>
@@ -153,17 +157,17 @@
         <p>Para contactarnos, por favor llena el siguiente formulario con tus datos de contacto y una breve descripción de tu consulta. Uno de nuestros representantes se pondrá en contacto contigo en breve.</p>
     </div>
     <div class="form-contacto">
-        <form id="form-contacto">
-            <input type="text" id="nombre" name="nombre" placeholder="NOMBRE" required>
+        <form id="form-contacto" method="post">
+            <input type="text" id="nombrec" name="nombre" placeholder="NOMBRE" required>
+        
+            <input type="text" id="apellidoc" name="apellido" placeholder="APELLIDO" required>
           
-            <input type="text" id="apellido" name="apellido" placeholder="APELLIDO" required>
+            <input type="email" id="emailc" name="email" placeholder="E-MAIL" required>
           
-            <input type="email" id="email" name="email" placeholder="E-MAIL" required>
-          
-            <textarea id="mensaje" name="mensaje" placeholder="MENSAJE" required></textarea>
+            <textarea id="mensajec" name="mensaje" placeholder="MENSAJE" required></textarea>
             <p id="error-mensaje"></p>
           
-            <button type="submit">Enviar</button>
+            <button type="submit" id="btnFormcontac">Enviar</button>
           </form>
           
     </div>
@@ -174,6 +178,7 @@
         <h3>COTIZACION</h3>
     </div>
     <div id="cotizacion">
+        <div class="cancelar"><button id="cancelar">cancelar</button></div>
         <!-- cotizacion parte 1 -->
         <div class="coti-1">
             <div class="intro"><P>Para poder proporcionarte una cotización precisa y detallada, necesitamos que nos brindes algunos detalles importantes acerca de tu proyecto.<br>Por favor, completa el siguiente formulario de cotización con la mayor cantidad de información posible. Una vez recibido, nos pondremos en contacto contigo para discutir los detalles de tu proyecto y proporcionarte una cotización personalizada que se adapte a tus necesidades y presupuesto. </P></div>
@@ -182,7 +187,6 @@
         <!-- cotizacion parte 2 -->
         <div id="coti-form-1" class="coti-2">
             <form id="form-coti-1">
-                <div class="cancelar"><button id="cancelar" onclick="">cancelar</button></div>
                 
                 <h3>DATOS DE CONTACTO</h3>
                 
@@ -202,7 +206,6 @@
         <!-- cotizacion parte 3 -->
         <div id="coti-form-2" class="coti-3">
             <form id="form-coti-2">
-                <div class="cancelar"><button id="cancelar" onclick="">cancelar</button></div>
                 
                 <h3>CUENTANOS TU IDEA</h3>
                 
@@ -215,7 +218,6 @@
         <!-- cotizacion parte 4 -->
         <div id="coti-form-3" class="coti-4">
             <form id="form-coti-3">
-                <div class="cancelar"><button id="cancelar" onclick="">cancelar</button></div>
                 
                 <h3>¿QUE NECESITAS?</h3>
                 
@@ -258,11 +260,7 @@
 </footer>
 <!-- scripts-->
 <script src="src/js/cotizacion.js"></script>
-
 <!-- validate-->
-<script src="src/js/validate.js"></script>
 <script src="src/js/validacion.js"></script>
-<!--Resumen PDF-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
